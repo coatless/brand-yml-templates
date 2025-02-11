@@ -1,0 +1,79 @@
+meta:
+  name:
+    short: ZS
+    full: ZS Associates
+  link:
+    home: https://www.zs.com
+    linkedin: https://www.linkedin.com/company/zs-associates
+
+logo:
+  images:
+    header: logos/zs-logo-spot.svg
+    header-white: logos/zs-logo-white-rgb.svg
+  small: logos/favicon.png  # For favicon/icon usage
+  medium:  # For header/navigation usage
+    light: header
+    dark: header-white
+
+color:
+  palette:
+    white: "#FFFFFF"
+    black: "#1A1628"
+    grey: "#F4F3F3"
+    teal: "#32A29B"
+    orange: "#EC7200"
+    blue: "#408CFF"
+    yellow: "#EAC959"
+    green: "#7FD07D"
+    purple: "#8F5AFF"
+
+  # Core brand colors
+  foreground: black
+  background: white
+  primary: teal
+  secondary: orange
+  light: grey
+  dark: black
+
+typography:
+  fonts:
+    ## Paid font, replace with actual font files
+    #- family: Tiempos Headline
+    #  source: file  
+    #  files:
+    #    - path: fonts/tiempos/TiemposHeadline-Light.otf
+    #      weight: 300
+    #    - path: fonts/tiempos/TiemposHeadline-Regular.otf
+    #      weight: 400
+    #    - path: fonts/tiempos/TiemposHeadline-Medium.otf
+    #      weight: 500
+    #    - path: fonts/tiempos/TiemposHeadline-Semibold.otf
+    #      weight: 600
+    #    - path: fonts/tiempos/TiemposHeadline-Bold.otf
+    #      weight: 700
+
+    - family: Open Sans
+      source: google
+      weight: [300, 400, 500, 600, 700]
+      style: [normal, italic]
+
+  base:
+    family: Open Sans
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Open Sans # Tiempos Headline
+    weight: 500
+    line-height: 1.2
+
+  link:
+    weight: 600
+    color: primary
+    decoration: underline
+
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
