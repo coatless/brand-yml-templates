@@ -1,0 +1,104 @@
+meta:
+  name: 
+    short: Psychometric Society
+    full: The Psychometric Society
+  link:
+    home: https://www.psychometricsociety.org
+    linkedin: https://www.linkedin.com/company/psychometric-society
+    facebook: https://www.facebook.com/psychometric-society
+    bluesky: https://bsky.app/profile/psychometric-society
+    twitter: https://twitter.com/psychometrics
+    instagram: https://www.instagram.com/psychometric.society
+
+logo:
+  images:
+    header: logos/psychometric-header.svg # Logo for dark backgrounds
+    icon: logos/psychometric-society-favicon.svg # P icon only
+  small: icon # For favicon/small usages
+  medium: header # Full logo usage
+  large: header # Full logo usage
+
+color:
+  palette:
+    white: "#FFFFFF"
+    black: "#333333" # Base text color
+    navy: "#010E36" # Primary dark blue
+    blue: "#1B305C" # Secondary blue
+    accent-blue: "#4561A3" # Accent blue for links and highlights
+    light-blue: "#A8A8A8" # Used for secondary text
+    light-gray: "#E3E3E3"
+    border-gray: "#CCCCCC"
+
+  # Theme colors
+  foreground: black # Base text color
+  background: white
+  primary: navy # Main brand color
+  secondary: blue # Secondary brand color
+  info: accent-blue
+  success: accent-blue
+  warning: light-blue
+  danger: light-blue
+  light: white
+  dark: navy
+
+typography:
+  fonts:
+    ## Using TypeKit paid for by the Society in actual implementation
+    # - family: Trade Gothic Next
+    #   source: file # Placeholder paths
+    #   files:
+    #     - path: fonts/trade-gothic-next.woff2 
+    #       weight: 400
+    #     - path: fonts/trade-gothic-next-bold.woff2
+    #       weight: 700
+    # 
+    # - family: Trade Gothic Next Condensed
+    #   source: file # Placeholder paths
+    #   files:
+    #     - path: fonts/trade-gothic-next-condensed.woff2
+    #       weight: 700
+    # 
+
+    - family: Inter # Alternative to Trade Gothic Next
+      source: google
+      weight: [400, 500, 600, 700]
+      style: [normal]
+      
+    - family: Barlow Condensed # Alternative to Trade Gothic Next Condensed
+      source: google
+      weight: [600, 700]
+      style: [normal]
+      
+    - family: Lato # Base font family
+      source: google
+      weight: [300, 400, 700]
+      style: [normal, italic]
+
+  base:
+    family: Lato
+    weight: 400
+    size: 1.6rem
+    line-height: 1.5
+
+  headings:
+    family: Barlow Condensed # Trade Gothic Next Condensed
+    weight: 700
+    line-height: 1.2
+    color: navy
+
+  monospace:
+    family: SFMono-Regular
+    weight: 400
+    size: 0.875em
+
+  link:
+    color: accent-blue
+    decoration: none
+    weight: 400
+
+defaults:
+  bootstrap:
+    defaults:
+      # Psychometric Society color overrides for Bootstrap
+      primary: $brand-navy
+      secondary: $brand-blue
