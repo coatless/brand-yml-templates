@@ -12,7 +12,7 @@ meta:
 
 logo:
   images:
-    header: logos/psychometric-header.svg # Logo for dark backgrounds
+    header: logos/psychometric-society-logo.svg # Logo for dark backgrounds
     icon: logos/psychometric-society-favicon.svg # P icon only
   small: icon # For favicon/small usages
   medium: header # Full logo usage
