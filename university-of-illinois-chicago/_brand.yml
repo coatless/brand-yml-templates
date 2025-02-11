@@ -1,0 +1,81 @@
+meta:
+  name: 
+    short: UIC
+    full: University of Illinois Chicago
+  link:
+    home: https://www.uic.edu
+    facebook: https://www.facebook.com/uic.edu
+    twitter: https://twitter.com/thisisuic
+    linkedin: https://www.linkedin.com/school/thisisuic/
+    instagram: https://www.instagram.com/thisisuic/
+
+logo:
+  images:
+    mark: logos/uic-logo-circle-red.svg      # Circle Campus mark from UIC brand assets
+    horizontal: logos/uic-logo-wordmark.svg  # Wordmark from UIC brand assets
+  small: mark         # Circle Campus mark for icon usage
+  medium: horizontal  # Horizontal logo for header usage
+  large: horizontal   
+
+color:
+  palette:
+    # Primary Colors
+    fire-red: "#D50032"  # Fire Engine Red - Pantone 199
+    navy-blue: "#001E62"  # Navy Pier Blue - Pantone 2758
+    # Accent Colors
+    chicago-blue: "#41B6E6"  # Chicago Blue - Pantone 298
+    champions-gold: "#FFBF3F"  # Champions Gold - Pantone 136
+    health-blue: "#0065AD"  # UI Health Sky Blue - Pantone 7704
+    # Neutral Colors
+    expo-white: "#F2F7EB"  # Expo White - Pantone 7500
+    steel-gray: "#333333"  # Steel Gray - Cool Gray 11
+
+  # Semantic color assignments
+  primary: fire-red
+  secondary: navy-blue
+  info: chicago-blue
+  warning: champions-gold
+  light: expo-white
+  dark: steel-gray
+
+typography:
+  fonts:
+    # Inter as a modern alternative to Theinhardt
+    - family: Inter
+      source: google
+      weight: [400, 500, 600, 700]
+      style: [normal, italic]
+    # Georgia as specified serif alternative
+    - family: Georgia
+      source: system
+    # Arial as specified alternative for general use
+    - family: Arial
+      source: system
+
+  base:
+    family: Inter   # Switch to Theinardt for official UIC branding
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Inter   # Switch to Theinardt for official UIC branding
+    weight: 700
+    line-height: 1.2
+    color: navy-blue
+
+  monospace:
+    family: ui-monospace
+    weight: 400
+    size: 0.9em
+
+  link:
+    color: navy-blue
+    weight: 500
+    decoration: underline
+
+defaults:
+  bootstrap:
+      # UIC color overrides for Bootstrap
+      primary: $brand-fire-red
+      secondary: $brand-navy-blue
