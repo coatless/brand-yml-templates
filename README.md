@@ -22,7 +22,12 @@ We have the following brand configurations available:
 - [Stanford University](stanford-university/)
 - [University of Illinois Urbana-Champaign](university-of-illinois-urbana-champaign/)
 - [University of Illinois Chicago](university-of-illinois-chicago/)
+- [University of Chicago](university-of-chicago/)
 - [ZS Associates](zs-associates/)
+
+> [!IMPORTANT]
+>
+> The brand configurations are not official and are provided for demonstration purposes only. Please consult the respective brand's guidelines for the official brand configuration. These implementations are independent from Posit's `_brand.yml` standard.
 
 ## Usage
 
@@ -46,6 +51,16 @@ The `_brand.yml` contains the following main sections:
 - [`logo`](https://posit-dev.github.io/brand-yml/brand/logo.html): Specifications for logo usage and minimum clear space
 - [`defaults`](https://posit-dev.github.io/brand-yml/brand/defaults.html): Default values for various design elements
 
+## Contributing
+
+We welcome contributions to this repository. Please send a [pull request][repopr] with the `_brand.yml` file and `logos/` folder for your brand configuration. 
+
+## License
+
+The `_brand.yml` files are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+Please consult the respective brand's guidelines for the logo usage. Including the logos in this repository does not imply any endorsement or affiliation with the respective brand. The logos are used for demonstration purposes only.
+
 ## Acknowledgements
 
 - Quarto for the brand YAML feature
@@ -56,3 +71,4 @@ The `_brand.yml` contains the following main sections:
 [byml]: https://posit-dev.github.io/brand-yml/
 [qbyml]: https://quarto.org/docs/authoring/brand.html
 [shinylive]: https://shiny.posit.co/py/docs/shinylive.html
+[repopr]: https://github.com/coatless/brand-yml-templates/pulls/
