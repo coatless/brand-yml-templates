@@ -13,6 +13,8 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    env:
+      QUARTO_CHROME_HEADLESS_MODE: "new"
 
     steps:
     - uses: actions/checkout@v4
@@ -20,7 +22,7 @@ jobs:
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
       with:
-        version: release
+        version: pre-release
 
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
