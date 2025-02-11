@@ -36,8 +36,8 @@ jobs:
 
     - name: Install yq
       run: |
-        sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-        sudo chmod a+x /usr/local/bin/yq
+        sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq &&\
+        sudo chmod +x /usr/bin/yq
 
     - name: Create Directory Structure
       run: |
@@ -45,44 +45,14 @@ jobs:
 
     - name: Generate Brand Websites
       run: |
-        # Get list of all brand directories
-        brand_dirs=$(find . -type f -name "_brand.yml" -exec dirname {} \; | sed 's|^./||')
-
-        # Function to modify _quarto.yml for each brand
-        process_brand() {
-          local brand_dir=$1
-          local brand_name=$(basename "$brand_dir")
-          echo "Processing ${brand_name}..."
-          
-          # Create temporary directory for this brand
-          temp_dir="temp_${brand_name}"
-          mkdir -p "$temp_dir"
-          
-          # Copy necessary files to temp directory
-          cp _quarto.yml "${temp_dir}/"
-          cp demo-index.qmd "${temp_dir}/index.qmd"
-          
-          # Copy entire brand directory to temp directory
-          cp -r "${brand_dir}" "${temp_dir}/"
-          
-          # Update brand path to use local copy
-          yq -i '.brand = "'"${brand_name}/_brand.yml"'"' "${temp_dir}/_quarto.yml"
-          
-          # Render in temp directory
-          cd "$temp_dir"
-          quarto render
-          cd ..
-          
-          # Move rendered output to final location
-          mkdir -p "_site/${brand_name}"
-          mv "${temp_dir}/_site/*" "_site/${brand_name}/"
-        }
-
-        # Process each brand directory
-        for brand_dir in $brand_dirs; do
-          process_brand "$brand_dir"
-        done
-
+          # Process each brand
+          for brand_dir in $(find . -type f -name "_brand.yml" -exec dirname {} \; | sed 's|^./||'); do
+            echo "Processing $brand_dir..."
+            if ! .github/scripts/process-brand.sh "$brand_dir"; then
+                echo "Failed to process $brand_dir"
+                exit 1
+            fi
+          done
     - name: Generate Gallery Index
       run: |
         # Render the main index page using gallery-specific _quarto.yml
