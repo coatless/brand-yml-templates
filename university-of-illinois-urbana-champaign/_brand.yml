@@ -11,9 +11,9 @@ meta:
 logo:
   images:
     # Additional logos should be downloaded from brand.illinois.edu
-    block-i: logos/block-i-orange-blue-outline.png  # Primary Block I logo
-    block-i-white: logos/block-i-orange-white-outline.png  # White version for dark backgrounds
-    block-i-blue: logos/block-i-blue-white-outline.png  # Blue version
+    block-i: logos/block-i-orange-blue-outline.svg  # Primary Block I logo
+    block-i-white: logos/block-i-orange-white-outline.svg  # White version for dark backgrounds
+    block-i-blue: logos/block-i-blue-white-outline.svg  # Blue version
   small: block-i  # Icon-sized logo reference
   medium:
     light: block-i  # For light backgrounds
