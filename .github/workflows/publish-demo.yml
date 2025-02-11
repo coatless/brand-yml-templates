@@ -58,10 +58,9 @@ jobs:
                 exit 1
             fi
           done
-    - name: Generate Gallery Index
-      run: |
-        # Render the main index page using gallery-specific _quarto.yml
-        quarto render index.qmd --config gallery_quarto.yml
+    
+    - name: Generate Template Directory Index
+      run: .github/scripts/render-template-directory.sh
     
     - name: Upload Pages Artifact
       uses: actions/upload-pages-artifact@v3
