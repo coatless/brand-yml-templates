@@ -1,33 +1,56 @@
 ---
-title: "Brand"
-format:
-  html: default
-  typst: 
-    output-file: index-typst.pdf
-  revealjs:
-    output-file: index-revealjs.html
+title: "Template Directory"
 ---
 
-## Overview
+This page showcases different template brand implementations using the [`_brand.yml` specification][byml] created by Posit. 
+Each example demonstrates how the same content can be styled differently using brand-specific configurations.
 
-This is a document themed using [**brand.yml**](https://posit-dev.github.io/brand-yml/)
+## Available Brand Examples
 
-::: {.content-visible when-format="html:js"}
+> [!IMPORTANT]
+>
+> The brand configurations are not official and are provided for demonstration purposes only. Please consult the respective brand's guidelines for the official brand configuration. These implementations are **not** affiliated with Posit or the `_brand.yml` standard.
 
-## Mermaid Diagram
-The following is a Mermaid diagram with branding applied:
-```{mermaid}
-%%| echo: false
-%%| fig-align: center
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+```{r}
+#| echo: false
+#| results: asis
+
+# List all directories with _brand.yml files
+brand_dirs <- list.files(pattern = "_brand.yml", recursive = TRUE, full.names = TRUE)
+brand_names <- dirname(brand_dirs)
+
+# Create links for each brand
+for (brand in brand_names) {
+  cat(sprintf("- [%s](%s/)\n\n", basename(brand), basename(brand)))
+  
+  # Try to read brand description from _brand.yml
+  yaml_content <- try(yaml::read_yaml(file.path(brand, "_brand.yml")), silent = TRUE)
+  if (!inherits(yaml_content, "try-error") && !is.null(yaml_content$meta$description)) {
+    cat("    -", yaml_content$meta$description, "\n\n")
+  }
+}
 ```
 
-:::
+## About Brand.yml
 
-## Subheading
+The [brand.yml specification][byml] provides a structured way to define brand elements including:
 
-{{< lipsum 1 >}}
+- Colors and typography
+- Logos and images
+- Meta information
+- Default styling rules
+
+Each example in this gallery uses the same content structure but applies different brand styling through their respective `_brand.yml` files. 
+This demonstrates how brand.yml can effectively separate content from styling while maintaining consistent brand identity.
+
+## Resources
+
+- [View source on GitHub][repo]
+- [Brand.yml Specification][byml]
+
+
+[s4py]: https://shiny.posit.co/py/
+[byml]: https://posit-dev.github.io/brand-yml/
+[qbyml]: https://quarto.org/docs/authoring/brand.html
+[shinylive]: https://shiny.posit.co/py/docs/shinylive.html
+[repo]: https://github.com/coatless/brand-yml-templates/

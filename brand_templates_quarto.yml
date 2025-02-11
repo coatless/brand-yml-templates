@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Brand.yml Templates"
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Brand.yml"
+        href: https://posit-dev.github.io/brand-yml/
+      - text: "YAML Specification"
+        href: https://posit-dev.github.io/brand-yml/brand/
+    tools:
+      - icon: github
+        href: https://github.com/coatless/brand-yml-templates
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
