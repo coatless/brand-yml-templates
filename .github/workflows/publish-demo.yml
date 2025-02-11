@@ -54,23 +54,27 @@ jobs:
           local brand_name=$(basename "$brand_dir")
           echo "Processing ${brand_name}..."
           
-          # Create a temporary copy of base _quarto.yml
-          cp _quarto.yml _quarto_temp.yml
+          # Create temporary directory for this brand
+          temp_dir="temp_${brand_name}"
+          mkdir -p "$temp_dir"
+          
+          # Create temporary config file
+          cp _quarto.yml "${temp_dir}/_quarto.yml"
           
           # Update the brand and output directory in the temporary file
-          yq -i '.brand = "'"${brand_dir}/_brand.yml"'"' _quarto_temp.yml
-          yq -i '.project."output-dir" = "_site/'"${brand_name}"'"' _quarto_temp.yml
+          yq -i '.brand = "'"../${brand_dir}/_brand.yml"'"' "${temp_dir}/_quarto.yml"
+          yq -i '.project."output-dir" = "../_site/'"${brand_name}"'"' "${temp_dir}/_quarto.yml"
           
-          # Copy demo-index.qmd to index.qmd in temp directory
-          mkdir -p temp_source
-          cp demo-index.qmd temp_source/index.qmd
+          # Copy demo-index.qmd to the temp directory
+          cp demo-index.qmd "${temp_dir}/index.qmd"
           
           # Render using the temporary config
-          quarto render --execute-dir=temp_source _quarto_temp.yml
+          cd "$temp_dir"
+          quarto render
+          cd ..
           
           # Clean up
-          rm _quarto_temp.yml
-          rm -rf temp_source
+          rm -rf "$temp_dir"
         }
 
         # Process each brand directory
