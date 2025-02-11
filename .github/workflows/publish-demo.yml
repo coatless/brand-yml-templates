@@ -30,7 +30,7 @@ jobs:
     - name: Setup R packages
       uses: r-lib/actions/setup-r-dependencies@v2
       with:
-        extra-packages: any::rmarkdown, any::yaml
+        packages: any::rmarkdown, any::yaml
 
     - name: Install yq
       run: |
