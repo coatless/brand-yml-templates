@@ -12,22 +12,6 @@ format:
 
 This is a document themed using [**brand.yml**](https://posit-dev.github.io/brand-yml/)
 
-::: {.content-visible when-format="html:js"}
-
-## Mermaid Diagram
-The following is a Mermaid diagram with branding applied:
-```{mermaid}
-%%| echo: false
-%%| fig-align: center
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-:::
-
 ## Subheading
 
 {{< lipsum 1 >}}
