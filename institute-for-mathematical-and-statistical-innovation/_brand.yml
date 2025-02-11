@@ -1,0 +1,70 @@
+meta:
+  name:
+    short: IMSI
+    full: Institute for Mathematical and Statistical Innovation
+  link:
+    home: https://www.imsi.institute
+    linkedin: https://www.linkedin.com/company/institute-for-mathematical-and-statistical-innovation-imsi # LinkedIn account link
+    facebook: https://www.facebook.com/IMSI.institute     # Facebook account link
+    twitter: https://x.com/IMSI_Institute            # X/Twitter account link
+
+logo:
+  images:
+    header: logos/imsi-logo.svg
+    small: logos/imsi-logo-favicon.svg
+  small: small    # Use the icon version for small displays
+  medium: header  # Use the full logo for medium displays
+  large: header   # Use the full logo for large displays
+
+color:
+  palette:
+    white: "#FFFFFF"
+    navy: "#1B1464"  # Primary navy blue from website
+    navy-dark: "#0D0B32"  # Darker navy used in footer
+    light-blue: "#E8F4FF"  # Light blue used for tags/badges
+    blue: "#0066CC"  # Used for links and interactive elements
+    text-gray: "#333333"  # Default text color
+
+  # Theme colors
+  foreground: text-gray
+  background: white
+  primary: navy
+  secondary: blue
+  light: light-blue
+  dark: navy-dark
+
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+      weight: [400, 600]
+      style: [normal, italic]
+    
+    - family: Source Sans Pro
+      source: google
+      weight: [400, 600, 700]
+      style: [normal, italic]
+
+  base:
+    family: Open Sans
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Source Sans Pro
+    weight: 600
+    line-height: 1.2
+    color: navy
+
+  link:
+    color: blue
+    weight: 600
+    decoration: none
+
+defaults:
+  bootstrap:
+    defaults:
+      # Use IMSI's color scheme in Bootstrap
+      navbar-dark-color: $brand-white
+      navbar-dark-bg: $brand-navy

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6.5 6.5 17 17">
+  <defs>
+    <style>
+      .navy-blue { fill: #15256a; }
+      .light-blue { fill: #b7dbf1; }
+    </style>
+    <circle id="small-dot" r="0.35"/>
+    <circle id="medium-dot" r="0.9"/>
+  </defs>
+  
+  <!-- Inner ring (small light blue dots) -->
+  <g class="light-blue">
+    <use href="#small-dot" transform="translate(15, 15) rotate(0) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(30) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(60) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(90) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(120) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(150) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(180) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(210) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(240) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(270) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(300) translate(0, -3.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(330) translate(0, -3.5)"/>
+  </g>
+
+  <!-- Middle ring (medium navy blue dots) -->
+  <g class="navy-blue">
+    <use href="#medium-dot" transform="translate(15, 15) rotate(15) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(45) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(75) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(105) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(135) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(165) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(195) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(225) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(255) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(285) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(315) translate(0, -5.5)"/>
+    <use href="#medium-dot" transform="translate(15, 15) rotate(345) translate(0, -5.5)"/>
+  </g>
+
+  <!-- Outer ring (small light blue dots) -->
+  <g class="light-blue">
+    <use href="#small-dot" transform="translate(15, 15) rotate(0) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(30) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(60) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(90) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(120) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(150) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(180) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(210) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(240) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(270) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(300) translate(0, -7.5)"/>
+    <use href="#small-dot" transform="translate(15, 15) rotate(330) translate(0, -7.5)"/>
+  </g>
+</svg>
