@@ -34,6 +34,11 @@ jobs:
       with:
         packages: any::rmarkdown, any::yaml
 
+
+    - name: Grant environment permissions
+      run: |
+        chmod +x .github/scripts/*.sh
+
     - name: Install yq
       run: |
         sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq &&\
