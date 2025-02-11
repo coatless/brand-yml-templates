@@ -7,16 +7,16 @@ Each example demonstrates how the same content can be styled differently using b
 
 ## Available Brand Examples
 
-> [!IMPORTANT]
->
-> The brand configurations are not official and are provided for demonstration purposes only. Please consult the respective brand's guidelines for the official brand configuration. These implementations are **not** affiliated with Posit or the `_brand.yml` standard.
+:::{.callout-important}
+The brand configurations are not official and are provided for demonstration purposes only. Please consult the respective brand's guidelines for the official brand configuration. These implementations are **not** affiliated with Posit or the `_brand.yml` standard.
+:::
 
 ```{r}
 #| echo: false
 #| results: asis
 
 # List all directories with _brand.yml files
-brand_dirs <- list.files(pattern = "_brand.yml", recursive = TRUE, full.names = TRUE)
+brand_dirs <- list.files(path = "../", pattern = "_brand.yml", recursive = TRUE, full.names = TRUE)
 brand_names <- dirname(brand_dirs)
 
 # Create links for each brand
