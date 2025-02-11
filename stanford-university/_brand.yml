@@ -1,0 +1,134 @@
+meta:
+  name: Stanford University
+  link:
+    home: https://www.stanford.edu
+    linkedin: https://www.linkedin.com/school/stanford-university/ # LinkedIn account link
+    facebook: https://www.facebook.com/Stanford/     # Facebook account link
+    twitter: https://x.com/Stanford                  # X/Twitter account link
+
+# Download the logos from https://identity.stanford.edu/visual-identity/stanford-logos/
+#logo:
+#  small:
+#    light: "./logos/block-s.png"
+#    dark: "./logos/block-s.png"
+#  medium:
+#    light: "./logos/wordmark.svg"
+#    dark: "./logos/wordmark-reversed.svg"
+#  large:
+#    light: "./logos/signature.svg"
+#    dark: "./logos/signature-reversed.svg"
+
+color:
+  palette:
+    # Primary Colors
+    cardinal: "#8C1515"  # Stanford Cardinal Red
+    cardinal-light: "#B83A4B"
+    cardinal-dark: "#820000"
+    white: "#FFFFFF"
+    black: "#2E2D29"
+    cool-grey: "#53565A"
+    
+    # Digital Interactive Colors
+    digital-red: "#B1040E"
+    digital-red-light: "#E50808"
+    digital-red-dark: "#820000"
+    digital-blue: "#006CB8"
+    digital-blue-light: "#6FC3FF"
+    digital-blue-dark: "#00548F"
+    digital-green: "#008566"
+    digital-green-light: "#1AECBA"
+    digital-green-dark: "#006F54"
+    
+    # Accent Colors
+    palo-alto: "#175E54"
+    palo-verde: "#279989"
+    olive: "#8F993E"
+    bay: "#6FA287"
+    sky: "#4298B5"
+    lagunita: "#007C92"
+    poppy: "#E98300"
+    spirited: "#E04F39"
+    illuminating: "#FEDD5C"
+    plum: "#620059"
+    brick: "#651C32"
+    archway: "#5D4B3C"
+    stone: "#7F7776"
+    fog: "#DAD7CB"
+
+  # Primary brand colors
+  primary: cardinal
+  secondary: cool-grey
+  background: white
+  foreground: black
+
+  # Digital interactive colors
+  info: digital-blue
+  success: digital-green
+  warning: digital-red
+  danger: digital-red-dark
+
+typography:
+  fonts:
+    # Primary Typefaces
+    - family: Source Sans 3
+      source: google
+      weight: [200, 300, 400, 600, 700]
+      style: [normal, italic]
+    
+    - family: Source Serif 4
+      source: google
+      weight: [300, 400, 500, 600, 700]
+      style: [normal, italic]
+    
+    # Accent Typefaces
+    - family: Roboto
+      source: google
+      weight: [300, 400, 500, 700]
+      style: [normal, italic]
+    
+    - family: Roboto Condensed
+      source: google
+      weight: [300, 400, 700]
+      style: [normal, italic]
+    
+    - family: Roboto Mono
+      source: google
+      weight: [300, 400, 500, 700]
+      style: [normal, italic]
+    
+    - family: Roboto Slab
+      source: google
+      weight: [300, 400, 700]
+      style: [normal]
+
+  # Typography defaults
+  base:
+    family: Source Sans 3
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Source Sans 3
+    weight: 600
+    line-height: 1.2
+    color: black
+
+  monospace:
+    family: Roboto Mono
+    weight: 400
+    size: 0.9em
+
+  link:
+    color: digital-blue
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      # Use Stanford's digital colors for Bootstrap components
+      primary: $brand-cardinal
+      info: $brand-digital-blue
+      success: $brand-digital-green
+      warning: $brand-digital-red
+      danger: $brand-digital-red-dark
