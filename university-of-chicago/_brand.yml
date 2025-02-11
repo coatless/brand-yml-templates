@@ -1,0 +1,137 @@
+meta:
+  name:
+    short: UChicago
+    full: The University of Chicago
+  link:
+    home: https://www.uchicago.edu
+    linkedin: https://www.linkedin.com/school/university-of-chicago/
+    instagram: https://www.instagram.com/uchicago
+    twitter: https://twitter.com/UChicago
+    youtube: https://www.youtube.com/uchicago
+    github: https://github.com/uchicago
+
+logo:
+  images:
+    university-logo-light: logos/uchicago-logo-university-maroon.svg
+    university-logo-dark: logos/uchicago-logo-university-white.svg
+    seal-logo-light: logos/uchicago-seal-maroon.svg
+    seal-logo-dark: logos/uchicago-seal-white.svg
+  small:  # For icon usage
+    light: seal-logo-light
+    dark: seal-logo-dark
+  medium:  # For header usage
+    light: university-logo-light
+    dark: university-logo-dark
+  large: 
+    light: university-logo-light
+    dark: university-logo-dark
+
+color:
+  palette:
+    # Primary colors
+    maroon: "#800000"  # Pantone 202
+    dark-gray: "#767676"  # Pantone Warm Gray 11
+    light-gray: "#D6D6CE"  # Pantone Cool Gray 3
+    white: "#FFFFFF"
+    black: "#000000"
+    
+    # Secondary colors - Core hues
+    yellow: "#FFA319"  # Pantone 124
+    orange: "#C16622"  # Pantone 138  
+    red: "#8F3931"  # Pantone 174
+    light-green: "#8A9045"  # Pantone 577
+    dark-green: "#58593F"  # Pantone 5743
+    blue: "#155F83"  # Pantone 633
+    violet: "#350E20"  # Pantone 7449
+    
+    # Violator colors
+    cyan: "#47B5FF"  # Process Cyan
+    magenta: "#FF3399"  # Process Magenta
+
+  # Semantic color assignments
+  foreground: black
+  background: white
+  primary: maroon
+  secondary: dark-gray
+  tertiary: light-gray
+
+typography:
+  fonts:
+    # EB Garamond is an open-source Garamond variant
+    - family: EB Garamond
+      source: google
+      weight: [400, 500, 600, 700, 800]
+      style: [normal, italic]
+    # Montserrat is a geometric sans-serif similar to Gotham also open-source
+    - family: Montserrat
+      source: google
+      weight: [300, 400, 500, 600, 700, 800, 900]
+      style: [normal, italic]
+    # UnifrakturMaguntia is a blackletter font similar to Fette Fraktur also open-source
+    - family: UnifrakturMaguntia
+      source: google
+      weight: [400]
+      style: [normal]
+
+    ## Obtain from: https://fonts.adobe.com/fonts/adobe-garamond
+    #- family: Adobe Garamond
+    #  source: file  # Replace with actual font files
+    #  files:
+    #    - path: fonts/tiempos/TiemposHeadline-Light.otf
+    #      weight: 300
+    #    - path: fonts/tiempos/TiemposHeadline-Regular.otf
+    #      weight: 400
+    #    - path: fonts/tiempos/TiemposHeadline-Medium.otf
+    #      weight: 500
+    #    - path: fonts/tiempos/TiemposHeadline-Semibold.otf
+    #      weight: 600
+    #    - path: fonts/tiempos/TiemposHeadline-Bold.otf
+    #      weight: 700
+    ## Obtain from: https://typography.com/fonts/gotham/styles
+    #- family: Gotham 
+    #  source: file # Replace with actual font files
+    #  files:
+    #    - path: fonts/gotham/Gotham-Light.otf
+    #      weight: 300
+    #    - path: fonts/gotham/Gotham-Regular.otf
+    #      weight: 400
+    #    - path: fonts/gotham/Gotham-Medium.otf
+    #      weight: 500
+    #   - path: fonts/gotham/Gotham-Semibold.otf
+    #      weight: 600
+    #    - path: fonts/gotham/Gotham-Bold.otf
+    #      weight: 700
+    ## Obtain from: https://www.myfonts.com/fonts/linotype/fette-fraktur/
+    #- family: Fette Fraktur
+    #  source: file # Replace with actual font files
+    #  files:
+    #    - path: fonts/fette-fraktur/FetteFraktur-Regular.otf
+
+  base:
+    family: EB Garamond
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Montserrat
+    weight: 700
+    style: normal
+    line-height: 1.2
+
+  monospace:
+    family: Courier New
+    weight: 400
+    size: 0.9em
+
+  link:
+    color: primary
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      # UChicago color overrides for Bootstrap
+      primary: $brand-maroon
+      secondary: $brand-dark-gray
+      light: $brand-light-gray
