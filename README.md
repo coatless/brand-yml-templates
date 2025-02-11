@@ -4,7 +4,7 @@ This repository contains several [`_brand.yml` configuration files][byml] that p
 
 ## Overview
 
-The [`_brand.yml` file][byml] provides structured data for Stanford's:
+The [`_brand.yml` file][byml] is a YAML configuration file that contains the following brand specifications:
 
 - Official color palette
 - Typography specifications
@@ -12,13 +12,14 @@ The [`_brand.yml` file][byml] provides structured data for Stanford's:
 - Spacing and layout guidelines
 - Brand assets references
 
-We can use this configuration file to switch to another brand theme easily. For example, we can use this configuration file to apply Stanford's brand to a [Shiny Python app](https://github.com/stanford-brand-yml/py-shiny-branded-demo) using the [`shiny`][s4py] Python package or to a [Quarto document](https://github.com/stanford-brand-yml/quarto-branded-website) using the [`brand`][qbyml] YAML key.
+For example, we can use this [configuration file](stanford-university/_brand.yml) to apply Stanford's brand to a [Shiny Python app](https://github.com/stanford-brand-yml/py-shiny-branded-demo) using the [`shiny`][s4py] Python package or to a [Quarto document](https://github.com/stanford-brand-yml/quarto-branded-website) using the [`brand`][qbyml] YAML key.
 
 ## Available Brand Configurations
 
 We have the following brand configurations available:
 
 - [Institute for Mathematical and Statistical Innovation](institute-for-mathematical-and-statistical-innovation/)
+- [Psychometric Society](psychometric-society/)
 - [Stanford University](stanford-university/)
 - [University of Illinois Urbana-Champaign](university-of-illinois-urbana-champaign/)
 - [University of Illinois Chicago](university-of-illinois-chicago/)
@@ -46,7 +47,7 @@ We have the following brand configurations available:
 The `_brand.yml` contains the following main sections:
 
 - [`meta`](https://posit-dev.github.io/brand-yml/brand/meta.html): Metadata about the brand configuration
-- [`color`](https://posit-dev.github.io/brand-yml/brand/color.html): Stanford's official color palette including Cardinal Red and secondary colors
+- [`color`](https://posit-dev.github.io/brand-yml/brand/color.html): Color palette including primary, secondary, and supporting colors
 - [`typography`](https://posit-dev.github.io/brand-yml/brand/typography.html): Font families, sizes, and weights for different content types
 - [`logo`](https://posit-dev.github.io/brand-yml/brand/logo.html): Specifications for logo usage and minimum clear space
 - [`defaults`](https://posit-dev.github.io/brand-yml/brand/defaults.html): Default values for various design elements
