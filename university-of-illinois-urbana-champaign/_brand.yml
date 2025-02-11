@@ -1,0 +1,111 @@
+meta:
+  name:
+    short: Illinois  # Common name used in branding
+    full: University of Illinois Urbana-Champaign  # Full, legal name
+  link:
+    home: https://illinois.edu    
+    linkedin: https://www.linkedin.com/school/university-of-illinois-urbana-champaign/ # LinkedIn account link
+    facebook: https://www.facebook.com/illinois.edu/    # Facebook account link
+    twitter: https://x.com/UofIllinois                  # X/Twitter account link
+
+logo:
+  images:
+    # Additional logos should be downloaded from brand.illinois.edu
+    block-i: logos/block-i-orange-blue-outline.png  # Primary Block I logo
+    block-i-white: logos/block-i-orange-white-outline.png  # White version for dark backgrounds
+    block-i-blue: logos/block-i-blue-white-outline.png  # Blue version
+  small: block-i  # Icon-sized logo reference
+  medium:
+    light: block-i  # For light backgrounds
+    dark: block-i-white  # For dark backgrounds
+  large: block-i  # Full-size logo reference
+
+color:
+  palette:
+    # Primary colors
+    illini-orange: "#FF5F05"  # Illini Orange, PMS 1655
+    illini-blue: "#13294B"  # Illini Blue, PMS 2767
+    # Secondary colors (Storm palette)
+    storm-dark: "#707372"
+    storm-medium: "#9C9A9D"
+    storm-light: "#C8C6C7"
+    white: "#FFFFFF"
+    black: "#000000"
+    # Supporting colors
+    industrial: "#1D58A7"
+    arches: "#009FD4"
+    patina: "#007E8E"
+    berry: "#5C0E41"
+    harvest: "#FCB316"
+    prairie: "#006230"
+    earth: "#7D3E13"
+    # Accessibility color
+    altgeld: "#C84113"  # For accessible orange text
+
+  # Theme color assignments
+  foreground: black
+  background: white
+  primary: illini-orange
+  secondary: illini-blue
+  success: prairie
+  info: industrial
+  warning: harvest
+  danger: berry
+  light: white
+  dark: illini-blue
+
+typography:
+  fonts:
+    - family: Montserrat
+      source: google
+      weight: [400, 500, 600, 700]  # Include common weights
+      style: [normal, italic]
+    - family: Source Sans Pro
+      source: google
+      weight: [300, 400, 600, 700]
+      style: [normal, italic]
+    - family: Georgia
+      source: system
+    - family: Open Sans Condensed
+      source: google
+      weight: [300, 700]
+      style: [normal]
+    # Note: Superfly is a paid font, uncomment if you have a license
+    #- family: Superfly
+    #  source: file
+    #  files:
+    #    - path: fonts/superfly.ttf  # Placeholder path
+    - family: Atkinson Hyperlegible
+      source: google
+      weight: [400, 700]
+      style: [normal, italic]
+
+  base:
+    family: Source Sans Pro
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Montserrat
+    weight: 700
+    style: normal
+    line-height: 1.2
+    color: illini-blue
+
+  monospace:
+    family: Source Code Pro
+    weight: 400
+    size: 0.9em
+
+  link:
+    weight: 600
+    color: orange
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      # Bootstrap overrides for UIUC brand colors
+      primary:  $brand-illini-orange
+      secondary: $brand-illini-blue
