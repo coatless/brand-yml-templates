@@ -17,13 +17,13 @@ logo:
     horizontal-reversed: logos/logo-unisa-horizontal-white.svg      # White horizontal logo
     vertical-mono: logos/logo-unisa-portrait-blue.svg               # Default vertical logo
     horizontal-mono: logos/logo-unisa-horizontal-blue.svg           # Horizontal logo version
-  small: vertical-reversed             # Small icon-sized logo
+  small: vertical             # Small icon-sized logo
   medium:                     # Medium sized logo for sidebar use
-    light: vertical-reversed  # Default blue logo on white
-    dark: vertical            # White logo on dark backgrounds
+    light: vertical           # Default blue logo on white
+    dark: vertical-reversed   # White logo on dark backgrounds
   large: 
-    light: horizontal-reversed # Default blue logo on white
-    dark:  horizontal          # White logo on dark backgrounds
+    light: horizontal         # Default blue logo on white
+    dark: horizontal-reversed # White logo on dark backgrounds
 
 color:
   palette:
@@ -112,8 +112,3 @@ typography:
     color: blue # Using color reference to UniSA Blue
     decoration: underline
 
-defaults:
-  bootstrap:
-    defaults:
-      # Any specific bootstrap overrides would go here
-      navbar-bg: $brand-blue # UniSA Blue for navbar
