@@ -1,0 +1,119 @@
+meta:
+  name:
+    short: UniSA # Short university name
+    full: University of South Australia # Full university name
+  link:
+    home: https://unisa.edu.au # University's home page
+    youtube: https://youtube.com/unisouthaustralia
+    facebook: https://facebook.com/UniSA
+    twitter: https://twitter.com/UniversitySA
+    instagram: https://instagram.com/universitysa
+
+logo:
+  images: # Local logo files - please download these from the university's asset bank
+    vertical: logos/logo-unisa-portrait-blue.svg                    # Default vertical logo
+    horizontal: logos/logo-unisa-horizontal-blue.svg                # Horizontal logo version
+    vertical-reversed: logos/logo-unisa-portrait-white.svg          # White logo for dark backgrounds
+    horizontal-reversed: logos/logo-unisa-horizontal-white.svg      # White horizontal logo
+    vertical-mono: logos/logo-unisa-portrait-blue.svg               # Default vertical logo
+    horizontal-mono: logos/logo-unisa-horizontal-blue.svg           # Horizontal logo version
+  small: vertical             # Small icon-sized logo
+  medium:                     # Medium sized logo for sidebar use
+    light: vertical           # Default blue logo on white
+    dark: vertical-reversed   # White logo on dark backgrounds
+  large: 
+    light: horizontal         # Default blue logo on white
+    dark: horizontal-reversed # White logo on dark backgrounds
+
+color:
+  palette:
+    white: "#FFFFFF"
+    black: "#151515"
+    blue: "#0052A0" # UniSA Blue - primary brand color
+    light-blue-1: "#F0F5FA" # Lightest secondary blue
+    light-blue-2: "#E2ECF5" # Very light secondary blue
+    light-blue-3: "#D4E4F0" # Light secondary blue
+    mid-blue-1: "#8CAFD4" # Medium light secondary blue
+    mid-blue-2: "#4480BC" # Medium secondary blue
+    dark-blue-1: "#002D65" # Dark secondary blue
+    dark-blue-2: "#001B44" # Very dark secondary blue
+    success-green: "#72994E" # Green (placeholder - use actual color if available)
+    warning-orange: "#F0AD4E" # Yellow/orange (placeholder - use actual color if available)
+    danger-red: "#D9534F" # Red (placeholder - use actual color if available)
+
+  # Core theme colors
+  foreground: black
+  background: white
+  primary: blue
+  secondary: mid-blue-2
+  tertiary: mid-blue-1
+  success: success-green
+  info: mid-blue-2
+  warning: warning-orange
+  danger: danger-red
+  light: white
+  dark: black
+
+typography:
+  fonts:
+    ## Requires licensing - contact University Marketing
+    #- family: UniSA Altis # University's custom typeface
+    #  source: file 
+    #  files:
+    #    - path: fonts/unisa-altis/UniSA-Altis-Light.ttf
+    #      weight: 300
+    #      style: normal
+    #    - path: fonts/unisa-altis/UniSA-Altis-LightItalic.ttf
+    #      weight: 300
+    #      style: italic
+    #    - path: fonts/unisa-altis/UniSA-Altis-Book.ttf
+    #      weight: 400
+    #      style: normal
+    #    - path: fonts/unisa-altis/UniSA-Altis-BookItalic.ttf
+    #      weight: 400
+    #      style: italic
+    #    - path: fonts/unisa-altis/UniSA-Altis-Medium.ttf
+    #      weight: 500
+    #      style: normal
+    #    - path: fonts/unisa-altis/UniSA-Altis-Bold.ttf
+    #      weight: 700
+    #      style: normal
+    #    - path: fonts/unisa-altis/UniSA-Altis-ExtraBold.ttf
+    #      weight: 800
+    #      style: normal
+    #    - path: fonts/unisa-altis/UniSA-Altis-Heavy.ttf
+    #      weight: 900
+    #      style: normal
+    # Alternative Google Font for public use when UniSA Altis is not available
+    - family: Open Sans
+      source: google
+      weight: [300, 400, 500, 700, 800, 900]
+      style: [normal, italic]
+
+  base:
+    family: Open Sans # UniSA Altis
+    weight: 400 # Book weight
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Open Sans # UniSA Altis
+    weight: 700 # Bold weight
+    style: normal
+    line-height: 1.2
+
+  monospace:
+    family: Consolas
+    weight: 400
+    size: 0.9em
+
+  link:
+    weight: 400
+    color: blue # Using color reference to UniSA Blue
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      # Any specific bootstrap overrides would go here
+      navbar-bg: $brand-blue # UniSA Blue for navbar

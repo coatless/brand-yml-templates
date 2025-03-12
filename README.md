@@ -21,9 +21,10 @@ We have the following brand configurations available:
 - [Institute for Mathematical and Statistical Innovation](institute-for-mathematical-and-statistical-innovation/)
 - [Psychometric Society](psychometric-society/)
 - [Stanford University](stanford-university/)
+- [University of Chicago](university-of-chicago/)
 - [University of Illinois Urbana-Champaign](university-of-illinois-urbana-champaign/)
 - [University of Illinois Chicago](university-of-illinois-chicago/)
-- [University of Chicago](university-of-chicago/)
+- [University of South Australia](university-of-south-australia/)
 - [ZS Associates](zs-associates/)
 
 > [!IMPORTANT]
